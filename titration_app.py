@@ -1,14 +1,8 @@
 import streamlit as st
 import numpy as np
-import plotly.express as px
 from scipy.optimize import fsolve
-st.markdown(
-       "<style>" +
-        ".element-container button.step-up { display: none; } " +
-        ".element-container button.step-down  { display: none; } " +
-        ".element-container div[data-baseweb] { border-radius: 4px; } "
-       "</style>", unsafe_allow_html=True
-)
+import plotly.express as px
+
 # Calculate affect of weak acid on pH
 # Done by simultaneously solving K_a and K_w
 # x is concentration of HA hydrolyzed
